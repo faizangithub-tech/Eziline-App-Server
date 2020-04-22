@@ -1,0 +1,14 @@
+C:\Users\FAIZAN ALAM\Documents\Eziline-Assignment\Eziline-App\EzilineApp.Api\bin\Debug\netcoreapp2.1\EzilineTask.deps.json
+C:\Users\FAIZAN ALAM\Documents\Eziline-Assignment\Eziline-App\EzilineApp.Api\bin\Debug\netcoreapp2.1\EzilineTask.runtimeconfig.json
+C:\Users\FAIZAN ALAM\Documents\Eziline-Assignment\Eziline-App\EzilineApp.Api\bin\Debug\netcoreapp2.1\EzilineTask.runtimeconfig.dev.json
+C:\Users\FAIZAN ALAM\Documents\Eziline-Assignment\Eziline-App\EzilineApp.Api\bin\Debug\netcoreapp2.1\EzilineTask.dll
+C:\Users\FAIZAN ALAM\Documents\Eziline-Assignment\Eziline-App\EzilineApp.Api\bin\Debug\netcoreapp2.1\EzilineTask.pdb
+C:\Users\FAIZAN ALAM\Documents\Eziline-Assignment\Eziline-App\EzilineApp.Api\obj\Debug\netcoreapp2.1\EzilineTask.csprojAssemblyReference.cache
+C:\Users\FAIZAN ALAM\Documents\Eziline-Assignment\Eziline-App\EzilineApp.Api\obj\Debug\netcoreapp2.1\EzilineTask.csproj.CoreCompileInputs.cache
+C:\Users\FAIZAN ALAM\Documents\Eziline-Assignment\Eziline-App\EzilineApp.Api\obj\Debug\netcoreapp2.1\EzilineTask.RazorAssemblyInfo.cache
+C:\Users\FAIZAN ALAM\Documents\Eziline-Assignment\Eziline-App\EzilineApp.Api\obj\Debug\netcoreapp2.1\EzilineTask.RazorAssemblyInfo.cs
+C:\Users\FAIZAN ALAM\Documents\Eziline-Assignment\Eziline-App\EzilineApp.Api\obj\Debug\netcoreapp2.1\EzilineTask.AssemblyInfoInputs.cache
+C:\Users\FAIZAN ALAM\Documents\Eziline-Assignment\Eziline-App\EzilineApp.Api\obj\Debug\netcoreapp2.1\EzilineTask.AssemblyInfo.cs
+C:\Users\FAIZAN ALAM\Documents\Eziline-Assignment\Eziline-App\EzilineApp.Api\obj\Debug\netcoreapp2.1\EzilineTask.RazorTargetAssemblyInfo.cache
+C:\Users\FAIZAN ALAM\Documents\Eziline-Assignment\Eziline-App\EzilineApp.Api\obj\Debug\netcoreapp2.1\EzilineTask.dll
+C:\Users\FAIZAN ALAM\Documents\Eziline-Assignment\Eziline-App\EzilineApp.Api\obj\Debug\netcoreapp2.1\EzilineTask.pdb
