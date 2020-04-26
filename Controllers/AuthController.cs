@@ -18,9 +18,10 @@ using System.Linq;
 
 namespace EzilineApp.Api.Controllers
 {
-    [AllowAnonymous]
+    
     [Route ("api/[controller]")]
     [ApiController]
+    [AllowAnonymous]
     public class AuthController : ControllerBase 
     {
         private readonly IConfiguration _config;
@@ -40,13 +41,16 @@ namespace EzilineApp.Api.Controllers
             _datacontext=datacontext;
         }
 
+        
         [HttpPost("login")]
         public async Task<IActionResult> login (logindto loginobj) 
         {
-            
+           
             var user =await _usermanager.FindByEmailAsync(loginobj.email);
             
-            
+            if(user!=null)
+            {
+
             var result =await _signInmanager.CheckPasswordSignInAsync(user,loginobj.password,false);
 
                 if(result.Succeeded)
@@ -64,7 +68,8 @@ namespace EzilineApp.Api.Controllers
                             user=usertoreturn   
                      });
                 }
-                     return Unauthorized();
+            }
+                return StatusCode(400,"email or password is incorrect");
         }
 
         
@@ -80,16 +85,36 @@ namespace EzilineApp.Api.Controllers
             {
                     var user =await _usermanager.FindByEmailAsync(newuser.Email);
              
-                    
                     var usertoreturn = _mapper.Map<usertoreturn>(user);
 
                     return Ok(usertoreturn);
             }
 
-            return Unauthorized();
+            return StatusCode(400,"failed to add new user");
 
         }
 
+        
+        [HttpGet("uniquename")]
+        public async Task<IActionResult> uniqueusername(string username)
+        {
+            User user=await _usermanager.FindByNameAsync(username);
+             
+            usertoreturn mapped=_mapper.Map<usertoreturn>(user); 
+     
+            return Ok(mapped);
+        }
+
+        
+        [HttpGet("uniqueemail")]
+        public async Task<IActionResult> uniqueemail(string email)
+        {
+            User user=await _usermanager.FindByEmailAsync(email);
+             
+            usertoreturn mapped=_mapper.Map<usertoreturn>(user); 
+     
+            return Ok(mapped);
+        }
 
 
         private async Task<string> GenerateJwtToken(User user)
